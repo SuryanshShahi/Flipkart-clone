@@ -36,3 +36,30 @@ font-style: italic;
 .navbar-brand .flipkart{
 width: 160px;
 }
+.Carousel-indicators-2 {
+  background-color: #eee;
+}
+.Carousel-fullHeightHoverWrapper-7 {
+  top: -20px !important;
+  height: 100%;
+}
+.MuiSvgIcon-root {
+  font-size: 2.8rem !important;
+}
+.card{
+  padding-inline: 0 !important;
+}
+.row>* {
+  padding-right: 0 !important;
+}
+.banner2 .card{
+  max-height: 361px;
+}
+.cardH{
+  max-height: 361px;
+  width: fit-content;
+}
+.imgH{
+  height: 200px;
+  width: 200px;
+}
