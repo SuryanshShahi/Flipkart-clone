@@ -10,31 +10,31 @@
   font-weight: 400;
   scroll-behavior: smooth;
 }
-#home{
+#home {
   background-color: #eee;
 }
-.navbar{
+.navbar {
   padding: 0;
   background-color: #2874f0;
 }
-input[type="search"]{
+input[type="search"] {
   height: 36px;
   outline: none;
   font-size: 14px;
   border-radius: 2px;
 }
-.navbar-brand h7{
-font-size: 11px;
-font-style: italic;
+.navbar-brand h7 {
+  font-size: 11px;
+  font-style: italic;
 }
-.navbar-brand .plus{
+.navbar-brand .plus {
   width: 11px;
 }
-.navbar-brand .logo{
+.navbar-brand .logo {
   margin-top: -12px;
 }
-.navbar-brand .flipkart{
-width: 160px;
+.navbar-brand .flipkart {
+  width: 160px;
 }
 .Carousel-indicators-2 {
   background-color: #eee;
@@ -46,20 +46,46 @@ width: 160px;
 .MuiSvgIcon-root {
   font-size: 2.8rem !important;
 }
-.card{
+.Carousel-button-10 {
+  margin: 0 !important;
+}
+
+.card {
   padding-inline: 0 !important;
 }
-.row>* {
+.row > * {
   padding-right: 0 !important;
 }
-.banner2 .card{
+.banner2 .card {
   max-height: 361px;
 }
-.cardH{
+.cardH {
   max-height: 361px;
   width: fit-content;
 }
-.imgH{
+.imgH {
   height: 200px;
   width: 200px;
+}
+.react-multiple-carousel__arrow {
+  background-color: #fff !important;
+  height: 104px;
+  border-radius: 3px !important;
+  color: black !important;
+  box-shadow: 0px 0px 5px 1px gray;
+  outline: none !important;
+}
+.react-multiple-carousel__arrow::before {
+  color: black !important;
+  font-weight: bolder;
+  padding-inline: 17px;
+}
+.react-multiple-carousel__arrow:hover {
+  box-shadow: 0px 0px 11px 2px gray;
+}
+.react-multiple-carousel__arrow--left {
+  left: -1px !important;
+}
+.react-multiple-carousel__arrow--right {
+  right: -1px !important;
 }
