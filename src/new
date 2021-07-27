@@ -1,0 +1,68 @@
+ <div className="mx-2 mr-3 mb-2">
+        <div className="container-fluid mx-1 banner2">
+          <div className="row">
+            <div className="card border-0 shadow-sm rounded-0">
+              <div className="row gx-0">
+                <div className="col-2 card border-0 rounded-0">
+                  <div className="card-body ">
+                    <div className="justify-content-center align-items-center d-flex pt-5 ">
+                      <h2 className="text-center">
+                        <b>Today's Fashion Deals</b>
+                      </h2>
+                    </div>
+                    <br></br>
+
+                    <div className="d-flex justify-content-center">
+                      <div
+                        className="btn btn-primary rounded-0"
+                        style={{ boxShadow: "0px 0px 6px 0px grey" }}
+                      >
+                        VIEW ALL
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="card-footer rounded-0"
+                    style={{
+                      backgroundImage:
+                        "url('https://rukminim1.flixcart.com/flap/278/278/image/9844dce6e0987483.jpg?q=90')",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                  </div>
+                </div>
+                <div className="col-10">
+                  <MultiCarousel {...setting}>
+                    {ProductLine1.map((elem) => {
+                      const { text, image, price } = elem;
+                      return (
+                        <div className="card border-0 mx-2">
+                          <div className="card-body my-5 text-center">
+                            <img
+                              src={image}
+                              className="img-fluid"
+                              alt="menupic"
+                            ></img>
+                          </div>
+                          <div
+                            className="text-center bg-white"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <div className="font-weight-bold">{text}</div>
+                            <h5 className="text-success ">Buy Now!!</h5>
+                            <div>{price}</div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </MultiCarousel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

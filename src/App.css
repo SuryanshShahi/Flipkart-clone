@@ -13,7 +13,7 @@
 #home {
   background-color: #eee;
 }
-.navbar {
+#navbar .navbar {
   padding: 0;
   background-color: #2874f0;
 }
@@ -88,4 +88,34 @@ input[type="search"] {
 }
 .react-multiple-carousel__arrow--right {
   right: -1px !important;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* ---------products---------- */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.topnav{
+top: 57px;
+padding: 0;
+}
+.fsize{
+  font-size: 14px;
+  font-weight: bolder;
+}
+.dropdown-menu {
+  box-shadow: 0px 0px 2px 0px grey;
+  margin-top:0px !important;
+  width: 1200px;
+  /* width:max-content */
+}
+.dropdown-menu li{
+  padding-bottom: 4px;
 }

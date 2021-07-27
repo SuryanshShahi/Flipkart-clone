@@ -5,7 +5,8 @@ import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
-import About from "./components/About";
+import Navbar from "./components/Navbar";
+import Products from "./components/Products";
 
 const App = () => {
   // const [loading, setLoading] = useState(false);
@@ -19,9 +20,10 @@ const App = () => {
   return (
     <section>
       <div className="app">
+      <Navbar/>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/products" component={Products} />
 
           <Redirect to="/" />
         </Switch>
