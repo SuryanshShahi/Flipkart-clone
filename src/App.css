@@ -114,7 +114,17 @@ padding: 0;
   box-shadow: 0px 0px 2px 0px grey;
   margin-top:0px !important;
   width: 1200px;
+  /* position: absolute; */
   /* width:max-content */
+}
+.menu1{
+  left: -135px;
+}
+.menu2{
+  left: -279px;
+}
+.menu3{
+  left: -420px;
 }
 .dropdown-menu li{
   padding-bottom: 4px;
