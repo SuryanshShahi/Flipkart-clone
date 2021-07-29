@@ -99,9 +99,9 @@ a:hover {
 }
 
 /* ---------products---------- */
-/* .nav-item:hover .dropdown-menu {
+.nav-item:hover .dropdown-menu {
   display: block;
-} */
+}
 .topnav{
 top: 57px;
 padding: 0;
@@ -122,10 +122,10 @@ padding: 0;
   left: -135px;
 }
 .menu2{
-  left: -279px;
+  left: -313px;
 }
 .menu3{
-  left: -420px;
+  left: -456px;
 }
 .dropdown-menu li{
   padding: 5px;
