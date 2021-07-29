@@ -102,34 +102,37 @@ a:hover {
 .nav-item:hover .dropdown-menu {
   display: block;
 }
-.topnav{
-top: 57px;
-padding: 0;
+.topnav {
+  top: 57px;
+  padding: 0;
 }
-.fsize{
+.fsize {
   font-size: 14px;
   font-weight: bolder;
 }
 .dropdown-menu {
   box-shadow: 0px 0px 2px 0px grey;
-  margin-top:0px !important;
+  margin-top: 0px !important;
   width: 1248px;
   padding: 0;
   /* position: absolute; */
   /* width:max-content */
 }
-.menu1{
-  left: -135px;
+.menu {
+  left: -18px;
 }
-.menu2{
-  left: -313px;
+.menu1 {
+  left: -160px;
 }
-.menu3{
-  left: -456px;
+.menu2 {
+  left: -344px;
 }
-.dropdown-menu li{
+.menu3 {
+  left: -447px;
+}
+.dropdown-menu li {
   padding: 5px;
-  font-family: Roboto,Arial,sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 13px;
   color: #00000096;
 }

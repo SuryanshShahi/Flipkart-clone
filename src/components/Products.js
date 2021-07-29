@@ -21,7 +21,7 @@ function Products() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="main_nav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav mx-4 px-2">
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link fsize dropdown-toggle text-dark"
@@ -31,7 +31,7 @@ function Products() {
                     Electronics
                   </a>
 
-                  <div className="dropdown-menu rounded-0 border-0">
+                  <div className="dropdown-menu menu rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
                       <div className="col px-4 pt-2">
                         <li className="text-dark">
@@ -456,10 +456,7 @@ function Products() {
                           <b>Sports & Fitness Store</b>
                         </li>
                       </div>
-                      <div
-                        className="col px-4 pt-2 pb-3"
-                        style={{ backgroundColor: "#f9f9f9" }}
-                      >
+                      <div className="col px-4 pt-2 pb-3">
                         <li className="text-dark">
                           <b>Smart Watches</b>
                         </li>
@@ -495,31 +492,45 @@ function Products() {
                     href="#"
                     data-toggle="dropdown"
                   >
-                    Electronics
+                    Women
                   </a>
                   <div className="dropdown-menu menu3 rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
                       <div className="col px-4 pt-2">
                         <li className="text-dark">
-                          <b>Mobiles</b>
+                          <b>Clothing</b>
                         </li>
-                        <li>Mi</li>
-                        <li>Realme</li>
-                        <li>Samsung</li>
-                        <li>Infinix</li>
-                        <li>OPPO</li>
-                        <li>Apple</li>
-                        <li>Vivo</li>
-                        <li>Honor</li>
-                        <li>Asus</li>
-                        <li>Poco X2</li>
-                        <li>realme Narzo 10</li>
-                        <li>Infinix Hot 9</li>
-                        <li>IQOO 3</li>
-                        <li>iPhone SE</li>
-                        <li>Motorola razr</li>
-                        <li>realme Narzo 10A</li>
-                        <li>Motorola g8 power lite</li>
+                        <li className="text-dark">
+                          <b>Women Western & Maternity Wear</b>
+                        </li>
+                        <li>Topwear</li>
+                        <li>Dresses</li>
+                        <li>Jeans</li>
+                        <li>Shorts</li>
+                        <li>Skirts</li>
+                        <li>Jeggings & Tights</li>
+                        <li>Trousers & Capris</li>
+                        <li className="text-dark">
+                          <b>Lingerie & Sleepwear</b>
+                        </li>
+                        <li>Bras</li>
+                        <li>Panties</li>
+                        <li>Lingerie Sets</li>
+                        <li>Night Dresses & Nighties</li>
+                        <li>Shapewear</li>
+                        <li>Camisoles & Slips</li>
+                        <li className="text-dark">
+                          <b>Swim & Beachwear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Party Dresses</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Sports Wear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Winter Wear</b>
+                        </li>
                       </div>
                       <div
                         className="col px-4 pt-2"
@@ -529,110 +540,120 @@ function Products() {
                         }}
                       >
                         <li className="text-dark">
-                          <b>Mobile Accessories</b>
+                          <b>Ethnic Wear</b>
                         </li>
-                        <li>Mobile Cases</li>
-                        <li>Headphones & Headsets</li>
-                        <li>Power Banks</li>
-                        <li>Screengaurds</li>
-                        <li>Memory Cards</li>
-                        <li>Smart Headphones</li>
-                        <li>Mobile Cables</li>
-                        <li>Mobile Charges</li>
-                        <li>Mobile Holders</li>
+                        <li>Sarees</li>
+                        <li>Kurtas & Kurtis</li>
+                        <li>Dress Material</li>
+                        <li>Lehenga Choli</li>
+                        <li>Blouse</li>
+                        <li>Kurtas Sets & Salwar Suits</li>
+                        <li>Gowns</li>
+                        <li>Dupattas</li>
                         <li className="text-dark">
-                          <b>Smart Wearable Tech</b>
+                          <b>Ethnic Bottoms</b>
                         </li>
-                        <li>Smart Watches</li>
-                        <li>Smart Glasses</li>
-                        <li>Smart Bands</li>
-                        <li className="text-dark">
-                          <b>Health Care Appliances</b>
-                        </li>
-                        <li>Bp Monitors</li>
-                        <li>Weighing Scale</li>
+                        <li>Leggings & Churidars</li>
+                        <li>Palazzos</li>
+                        <li>Shararas</li>
+                        <li>Salwars & Patiala</li>
+                        <li>Dhoti Pants</li>
+                        <li>Ethnic Trousers</li>
+                        <li>Saree Shapewear & Petticoats</li>
                       </div>
                       <div className="col px-4 pt-2">
                         <li className="text-dark">
-                          <b>Laptops</b>
-                        </li>
-                        <li>Gaming Laptops</li>
-                        <li className="text-dark">
-                          <b>Desktop PCs</b>
+                          <b>Footwear</b>
                         </li>
                         <li className="text-dark">
-                          <b>Gaming & Accessories</b>
+                          <b>Sandals</b>
+                        </li>
+                        <li>Flats</li>
+                        <li>Heels</li>
+                        <li>Wedges</li>
+                        <li className="text-dark">
+                          <b>Shoes</b>
+                        </li>
+                        <li>Sports Shoes</li>
+                        <li>Casual Shoes</li>
+                        <li>Boots</li>
+                        <li className="text-dark">
+                          <b>Ballerinas</b>
                         </li>
                         <li className="text-dark">
-                          <b>Computer Accessories</b>
+                          <b>Slippers & Flip-Flop's</b>
                         </li>
-                        <li>External Hard Disks</li>
-                        <li>Pendrives</li>
-                        <li>Laptop Skins & Decals</li>
-                        <li>Laptop Bags</li>
-                        <li>Mouse</li>
                         <li className="text-dark">
-                          <b>Computer Peripherals</b>
+                          <b>Watches</b>
                         </li>
-                        <li>Printers & Ink Cartridges</li>
-                        <li>Monitors</li>
                         <li className="text-dark">
-                          <b>Tablets</b>
+                          <b>Smart Watches</b>
                         </li>
-                        <li>Apple iPads</li>
+                        <li className="text-dark">
+                          <b>Personal Care Appliances</b>
+                        </li>
+                        <li>Hair Straightners</li>
+                        <li>Hair Dryers</li>
+                        <li>Epilators</li>
                       </div>
                       <div
                         className="col px-4 pt-2 pb-3"
                         style={{ backgroundColor: "#f9f9f9" }}
                       >
-                        <li>Televisions</li>
                         <li className="text-dark">
-                          <b>Speakers</b>
+                          <b>Beauty & Grooming</b>
                         </li>
-                        <li>Home Audio Speakers</li>
-                        <li>Home Threaters</li>
-                        <li>Soundbars</li>
-                        <li>Bluetooth Speakers</li>
-                        <li>DTH Set Top Box</li>
+                        <li>Make Up</li>
+                        <li>Skin Care</li>
+                        <li>Hair Care</li>
+                        <li>Bath & Spa</li>
+                        <li>Deodorants & Perfumes</li>
                         <li className="text-dark">
-                          <b>Smart Home Automation</b>
+                          <b>Jewellery</b>
                         </li>
-                        <li>Google Nest</li>
+                        <li>Artificial Jewellery</li>
+                        <li>Silver Jewellery</li>
+                        <li>Precious Jewellery</li>
+                        <li>Coins and Bars</li>
                         <li className="text-dark">
-                          <b>Camera</b>
+                          <b>Accessories</b>
                         </li>
-                        <li>DSLR & Mirrorless</li>
-                        <li>Compact & Bridge Cameras</li>
-                        <li>Sports & Action</li>
-                        <li className="text-dark">
-                          <b>Camera Accessories</b>
-                        </li>
-                        <li>Lens</li>
-                        <li>Tripods</li>
-                        <li className="text-dark">
-                          <b>Network Components</b>
-                        </li>
-                        <li>Routers</li>
+                        <li>Handbags</li>
+                        <li>Shoulder Bags</li>
+                        <li>Totes</li>
+                        <li>Sling bags</li>
+
+                        <li>Clutches</li>
+                        <li>Wallets & Belts</li>
+                        <li>Luggage & Travel</li>
+                        <li>Sunglasses</li>
+                        <li>Frames</li>
                       </div>
                       <div className="col px-4 pt-2">
                         <li className="text-dark">
                           <b>Featured</b>
                         </li>
-                        <li>Google Assistant Store</li>
-                        <li>Laptops on Buyback Guarantee</li>
-                        <li>Flipkart SmartBuy</li>
-                        <li>Li-Polymer Power Banks</li>
-                        <li>Sony PS4 Pro & Slim</li>
-                        <li>Apple Products</li>
-                        <li>Microsoft Store</li>
-                        <li>Lenovo Phab Series</li>
-                        <li>JBL Speakers</li>
-                        <li>SamrtPhones On Buyback Guarantee</li>
-                        <li>Philips</li>
-                        <li>Dr. Morepen</li>
-                        <li>Complete Mobile Protection</li>
-                        <li>Mobiles No Cost EMI</li>
-                        <li>Huawei Watch Gt 2e Smart Watch</li>
+                        <li>Forever 21</li>
+                        <li>Accessorize</li>
+                        <li>W</li>
+                        <li>Pantaloons</li>
+                        <li>Chemistry</li>
+                        <li>Lakme</li>
+                        <li>Nivea</li>
+                        <li>Catwalk</li>
+                        <li>Titan-Raga</li>
+                        <li>Fastrack</li>
+                        <li>Divastri</li>
+                        <li>Rare Roots</li>
+                        <li>Anmi</li>
+                        <li>Coins & Bars</li>
+                        <li>Crocs</li>
+                        <li className="text-dark">
+                          <b>Trending today!</b>
+                        </li>
+                        <li>Ruffles & Frills</li>
+                        <li>Pastel Kurtas & Kurtis</li>
+                        <li>Designer Net Sarees</li>
                       </div>
                     </div>
                   </div>
