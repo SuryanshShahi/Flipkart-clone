@@ -1,21 +1,26 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Electronics } from "../Data/Dropdown";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 function Products() {
   return (
     <section id="home">
       <div>
         <nav
-          className="navbar navbar-expand-lg navbar-dark bg-white topnav w-100"
+          className="navbar navbar-expand-lg bg-white topnav w-100"
           style={{ boxShadow: "0 1px 1px 0 rgb(0 0 0 / 16%)" }}
         >
           <div className="container">
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#main_nav"
+              data-toggle="collapse"
+              data-target="#main_nav"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -25,7 +30,7 @@ function Products() {
               <ul className="navbar-nav ">
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link fsize dropdown-toggle text-dark"
+                    className="nav-link fsize dropdown-toggle"
                     href="#"
                     // data-toggle="dropdown1"
                   >
@@ -175,7 +180,7 @@ function Products() {
 
                 <li className="nav-item mx-5 dropdown">
                   <a
-                    className="nav-link fsize dropdown-toggle text-dark"
+                    className="nav-link fsize dropdown-toggle"
                     href="#"
                     data-toggle="dropdown"
                   >
@@ -331,7 +336,7 @@ function Products() {
 
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link fsize dropdown-toggle text-dark"
+                    className="nav-link fsize dropdown-toggle"
                     href="#"
                     data-toggle="dropdown"
                   >
@@ -489,7 +494,7 @@ function Products() {
 
                 <li className="nav-item mx-5 dropdown">
                   <a
-                    className="nav-link fsize dropdown-toggle text-dark"
+                    className="nav-link fsize dropdown-toggle"
                     href="#"
                     data-toggle="dropdown"
                   >
@@ -662,13 +667,13 @@ function Products() {
 
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link fsize dropdown-toggle text-dark"
+                    className="nav-link fsize dropdown-toggle"
                     href="#"
                     data-toggle="dropdown"
                   >
                     <b>Baby & Kids</b>
                   </a>
-                  <div className="dropdown-menu menu3 rounded-0 border-0">
+                  <div className="dropdown-menu menu4 rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
                       <div className="col px-4 pt-2">
                         <li className="text-dark">
@@ -826,13 +831,13 @@ function Products() {
 
                 <li className="nav-item mx-5 dropdown">
                   <a
-                    className="nav-link fsize dropdown-toggle text-dark"
+                    className="nav-link fsize dropdown-toggle"
                     href="#"
                     data-toggle="dropdown"
                   >
                     <b>Home & Furniture</b>
                   </a>
-                  <div className="dropdown-menu menu3 rounded-0 border-0">
+                  <div className="dropdown-menu menu5 rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
                       <div className="col px-4 pt-2">
                         <li className="text-dark">
@@ -999,13 +1004,13 @@ function Products() {
 
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link fsize dropdown-toggle text-dark"
+                    className="nav-link fsize dropdown-toggle"
                     href="#"
                     data-toggle="dropdown"
                   >
                     <b>Sports, Books & More</b>
                   </a>
-                  <div className="dropdown-menu menu3 rounded-0 border-0">
+                  <div className="dropdown-menu menu6 rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
                       <div className="col px-4 pt-2">
                         <li className="text-dark">
@@ -1162,13 +1167,13 @@ function Products() {
                 </li>
 
                 <li className="nav-item mx-5 dropdown">
-                  <NavLink className="nav-link fsize text-dark" to="/">
+                  <NavLink className="nav-link fsize" to="/">
                     <b>Flights</b>
                   </NavLink>
                 </li>
 
                 <li className="nav-item dropdown">
-                  <NavLink className="nav-link fsize text-dark" to="/">
+                  <NavLink className="nav-link fsize" to="/">
                     <b>Offer Zone</b>
                   </NavLink>
                 </li>
@@ -1176,6 +1181,263 @@ function Products() {
             </div>
           </div>
         </nav>
+
+        <div className="container-fluid">
+          <div className="row py-2">
+            <div className="col-2">
+              <div className="card shadow-sm border-0 rounded-0 py-3">
+                <h6 className="px-3 font-weight-bolder">FILTERS</h6>
+                <hr></hr>
+                <div
+                  className="px-3 pb-3 font-weight-bold"
+                  style={{ fontSize: "12px" }}
+                >
+                  CATEGORIES
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                </div>
+                <hr></hr>
+                <div
+                  className="px-3 pb-3 font-weight-bold"
+                  style={{ fontSize: "12px" }}
+                >
+                  PRICE
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                </div>
+                <hr></hr>
+                <div
+                  className="px-3 pb-3 font-weight-bold"
+                  style={{ fontSize: "12px" }}
+                >
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkbox"
+                  />
+                  <img
+                    src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"
+                    className="img-fluid pl-3"
+                    style={{ height: "21px" }}
+                  ></img>
+                </div>
+                <div className="">
+                  <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <Typography>CUSTOMER RATINGS</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />
+                        <h7 className="font-weight-bolder pl-3">4★ & Above</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />
+                        <h7 className="font-weight-bolder pl-3">3★ & Above</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />
+                        <h7 className="font-weight-bolder pl-3">2★ & Above</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7
+                          className="font-weight-bolder"
+                          style={{ marginLeft: "12px" }}
+                        >
+                          1★ & Above
+                        </h7>
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <Typography>DISCOUNT</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />
+                        <h7 className="font-weight-bolder pl-3">70% or more</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />
+                        <h7 className="font-weight-bolder pl-3">60% or more</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />
+                        <h7 className="font-weight-bolder pl-3">50% or more</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">40% or more</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">30% or more</h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">
+                          30% and below
+                        </h7>
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <Typography>AVAILABILITY</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">
+                          Include Out of Stock
+                        </h7>
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <Typography>OFFERS</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">
+                          Special Price
+                        </h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">
+                          Buy More, Save More
+                        </h7>
+                      </div>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">No Cost EMI</h7>
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <Typography> GST INVOICE AVAILABLE</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <div className="mb-2">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox"
+                        />{" "}
+                        <h7 className="font-weight-bolder pl-3">
+                          GST Invoice Available
+                        </h7>
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+                </div>
+              </div>
+            </div>
+            <div className="col-10">
+              <div className="card rounded-0 border-0 shadow-sm">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

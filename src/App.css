@@ -8,6 +8,7 @@
   /* box-sizing: border-box; */
   font-family: "Nunito", sans-serif;
   font-weight: 400;
+  /* overflow-x:clip; */
   scroll-behavior: smooth;
 }
 #home {
@@ -103,12 +104,17 @@ a:hover {
   display: block;
 }
 .topnav {
-  top: 57px;
+  /* top: 57px; */
   padding: 0;
+  margin-top: 57px;
 }
 .fsize {
   font-size: 14px;
+  color: black;
   font-weight: bolder;
+}
+.fsize:hover{
+  color: #2874f0;
 }
 .dropdown-menu {
   box-shadow: 0px 0px 2px 0px grey;
@@ -130,14 +136,59 @@ a:hover {
 .menu3 {
   left: -447px;
 }
+.menu4 {
+  left: -572px;
+}
+.menu5 {
+  left: -722px;
+}
+.menu6 {
+  left: -908px;
+}
 .dropdown-menu li {
   padding: 5px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 13px;
   color: #00000096;
 }
+.accordionsize{
+  font-size: 14px;
+}
 
+.MuiIconButton-root,.MuiAccordion-root.Mui-expanded,.MuiAccordionSummary-content{
+  margin: 0 !important;
+  padding: 0 !important;
+  
+}
+.MuiAccordionSummary-root.Mui-expanded{
+  min-height: 0 !important;
+}
+.MuiSvgIcon-root{
+  width: 0.5em !important;
+}
+.MuiAccordionDetails-root{
+  display: block !important;
+}
 /* ---------Footer---------- */
 #footer{
   background-color: #172337;
 }
+#footer span{
+  font-size: 11.5px;
+  font-family: Roboto,Arial,sans-serif;
+}
+#footer li{
+  line-height: 2;
+  font-size: 11.5px;
+  font-weight: 400;
+  font-family: Roboto,Arial,sans-serif;
+}
+#footer p{
+  margin-bottom: 0;
+  font-size: 11.5px;
+  font-family: Roboto,Arial,sans-serif;
+}
+/* .fa-star-o{
+  background-color: #ffc107!important;
+  
+} */
