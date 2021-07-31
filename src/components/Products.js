@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Electronics } from "../Data/Dropdown";
 
 function Products() {
@@ -6,7 +7,7 @@ function Products() {
     <section id="home">
       <div>
         <nav
-          className="navbar navbar-expand-lg navbar-dark bg-white topnav w-100 fixed-top"
+          className="navbar navbar-expand-lg navbar-dark bg-white topnav w-100"
           style={{ boxShadow: "0 1px 1px 0 rgb(0 0 0 / 16%)" }}
         >
           <div className="container">
@@ -21,14 +22,14 @@ function Products() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="main_nav">
-              <ul className="navbar-nav mx-4 px-2">
+              <ul className="navbar-nav ">
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link fsize dropdown-toggle text-dark"
                     href="#"
                     // data-toggle="dropdown1"
                   >
-                    Electronics
+                    <b>Electronics</b>
                   </a>
 
                   <div className="dropdown-menu menu rounded-0 border-0">
@@ -178,7 +179,7 @@ function Products() {
                     href="#"
                     data-toggle="dropdown"
                   >
-                    TVs & Appliances
+                    <b>TVs & Appliances</b>
                   </a>
                   <div className="dropdown-menu menu1 rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
@@ -334,7 +335,7 @@ function Products() {
                     href="#"
                     data-toggle="dropdown"
                   >
-                    Men
+                    <b>Men</b>
                   </a>
                   <div className="dropdown-menu menu2 rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
@@ -492,7 +493,7 @@ function Products() {
                     href="#"
                     data-toggle="dropdown"
                   >
-                    Women
+                    <b>Women</b>
                   </a>
                   <div className="dropdown-menu menu3 rounded-0 border-0">
                     <div className="row pl-2 mr-2 pr-1">
@@ -657,6 +658,519 @@ function Products() {
                       </div>
                     </div>
                   </div>
+                </li>
+
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link fsize dropdown-toggle text-dark"
+                    href="#"
+                    data-toggle="dropdown"
+                  >
+                    <b>Baby & Kids</b>
+                  </a>
+                  <div className="dropdown-menu menu3 rounded-0 border-0">
+                    <div className="row pl-2 mr-2 pr-1">
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Clothing</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Kids Clothing</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Boys Clothing</b>
+                        </li>
+                        <li>T-Shirts</li>
+                        <li>Ethnic Wear</li>
+                        <li>Shorts</li>
+                        <li>Shirts</li>
+                        <li>Innerwear</li>
+                        <li className="text-dark">
+                          <b>Girls Clothing</b>
+                        </li>
+                        <li>Dresses & Skirts</li>
+                        <li>Ethnic Wear</li>
+                        <li>T-Shirts & Tops</li>
+                        <li>Innerwear</li>
+                        <li className="text-dark">
+                          <b>Baby Boys Clothing</b>
+                        </li>
+                        <li>Combos Sets</li>
+                        <li>T-Shirts</li>
+                        <li>Innerwear</li>
+                        <li className="text-dark">
+                          <b>Baby Girls Clothing</b>
+                        </li>
+                        <li>Combos Sets</li>
+                        <li>Dresses & Gowns</li>
+                        <li>Innerwear</li>
+                      </div>
+                      <div
+                        className="col px-4 pt-2"
+                        style={{
+                          backgroundColor: "#f9f9f9",
+                          backgroundSize: "cover",
+                        }}
+                      >
+                        <li className="text-dark">
+                          <b>Kids Footwear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Boys Footwear</b>
+                        </li>
+                        <li>Sandals</li>
+                        <li>Sport Shoes</li>
+                        <li className="text-dark">
+                          <b>Girls Footwear</b>
+                        </li>
+                        <li>Flats & Bellies</li>
+                        <li>Sports Shoes</li>
+                        <li className="text-dark">
+                          <b>Infant Footwear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Character Shoes</b>
+                        </li>
+                        <li>Kids Watches</li>
+                        <li>Kids Sunglasses</li>
+                        <li className="text-dark">
+                          <b>Kids Winter Wear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Boys Winter Wear</b>
+                        </li>
+                        <li>Boys Sweatshirts</li>
+                        <li>Boys Jackets</li>
+                        <li className="text-dark">
+                          <b>Girls Winter Wear</b>
+                        </li>
+                        <li>Girls Sweatshirts</li>
+                        <li>Girls Jackets</li>
+                        <li>Infant Winter Wear</li>
+                        <li>Thermals</li>
+                      </div>
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Toys</b>
+                        </li>
+
+                        <li>Remote Control Toys</li>
+                        <li>Educational Toys</li>
+                        <li>Soft Toys</li>
+                        <li>Cars & Die-cast Vehicles</li>
+                        <li>Outdoor Toys</li>
+                        <li>Action Figures</li>
+                        <li>Board Games</li>
+                        <li>Musical Toys</li>
+                        <li>Dolls & Doll Houses</li>
+                        <li>Puzzels</li>
+                        <li>S.T.E.M Toys</li>
+                        <li>Helicopters & Drones</li>
+                        <li>Toy Guns</li>
+                        <li>Party Supplies</li>
+                        <li className="text-dark">
+                          <b>School Supplies</b>
+                        </li>
+                        <li>School Bags</li>
+                        <li>School Combo Sets</li>
+                        <li>Lunch Box</li>
+                      </div>
+                      <div
+                        className="col px-4 pt-2 pb-3"
+                        style={{ backgroundColor: "#f9f9f9" }}
+                      >
+                        <li className="text-dark">
+                          <b>Baby Care</b>
+                        </li>
+                        <li>Diapers</li>
+                        <li>Wipes</li>
+                        <li>Diapering & Potty Training</li>
+                        <li>Baby Bath, Hair & Skin Care</li>
+                        <li>Baby Grooming</li>
+
+                        <li>Baby Bathing Accessories</li>
+                        <li>Baby Gift Sets & Combo</li>
+                        <li>Baby Oral Care</li>
+                        <li>Nursing & Breast Feeding</li>
+                        <li>Baby Food</li>
+                        <li>Baby Feeding Bottle & Accessories</li>
+                        <li>Baby Feeding Utensils & Accessories</li>
+                        <li>Baby Bedding</li>
+                        <li>Baby Gear</li>
+                        <li>Baby Medical & Health Care</li>
+                        <li>Baby Proofing & Saftey</li>
+                        <li>Baby Cleaners & Detergents</li>
+                      </div>
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Featured Brands</b>
+                        </li>
+                        <li>Miss & Chief</li>
+                        <li>Barbie</li>
+                        <li>Disney</li>
+                        <li>United Colors of Benetton</li>
+                        <li>The Children Place</li>
+                        <li>US Polo</li>
+                        <li>Flying Machine</li>
+                        <li>Crocs</li>
+                        <li>Puma</li>
+                        <li>Funskool</li>
+                        <li>Lego</li>
+                        <li>Luvlap</li>
+                        <li>Mamy Poko</li>
+                        <li>Mee Mee</li>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li className="nav-item mx-5 dropdown">
+                  <a
+                    className="nav-link fsize dropdown-toggle text-dark"
+                    href="#"
+                    data-toggle="dropdown"
+                  >
+                    <b>Home & Furniture</b>
+                  </a>
+                  <div className="dropdown-menu menu3 rounded-0 border-0">
+                    <div className="row pl-2 mr-2 pr-1">
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Clothing</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Women Western & Maternity Wear</b>
+                        </li>
+                        <li>Topwear</li>
+                        <li>Dresses</li>
+                        <li>Jeans</li>
+                        <li>Shorts</li>
+                        <li>Skirts</li>
+                        <li>Jeggings & Tights</li>
+                        <li>Trousers & Capris</li>
+                        <li className="text-dark">
+                          <b>Lingerie & Sleepwear</b>
+                        </li>
+                        <li>Bras</li>
+                        <li>Panties</li>
+                        <li>Lingerie Sets</li>
+                        <li>Night Dresses & Nighties</li>
+                        <li>Shapewear</li>
+                        <li>Camisoles & Slips</li>
+                        <li className="text-dark">
+                          <b>Swim & Beachwear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Party Dresses</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Sports Wear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Winter Wear</b>
+                        </li>
+                      </div>
+                      <div
+                        className="col px-4 pt-2"
+                        style={{
+                          backgroundColor: "#f9f9f9",
+                          backgroundSize: "cover",
+                        }}
+                      >
+                        <li className="text-dark">
+                          <b>Ethnic Wear</b>
+                        </li>
+                        <li>Sarees</li>
+                        <li>Kurtas & Kurtis</li>
+                        <li>Dress Material</li>
+                        <li>Lehenga Choli</li>
+                        <li>Blouse</li>
+                        <li>Kurtas Sets & Salwar Suits</li>
+                        <li>Gowns</li>
+                        <li>Dupattas</li>
+                        <li className="text-dark">
+                          <b>Ethnic Bottoms</b>
+                        </li>
+                        <li>Leggings & Churidars</li>
+                        <li>Palazzos</li>
+                        <li>Shararas</li>
+                        <li>Salwars & Patiala</li>
+                        <li>Dhoti Pants</li>
+                        <li>Ethnic Trousers</li>
+                        <li>Saree Shapewear & Petticoats</li>
+                      </div>
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Footwear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Sandals</b>
+                        </li>
+                        <li>Flats</li>
+                        <li>Heels</li>
+                        <li>Wedges</li>
+                        <li className="text-dark">
+                          <b>Shoes</b>
+                        </li>
+                        <li>Sports Shoes</li>
+                        <li>Casual Shoes</li>
+                        <li>Boots</li>
+                        <li className="text-dark">
+                          <b>Ballerinas</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Slippers & Flip-Flop's</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Watches</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Smart Watches</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Personal Care Appliances</b>
+                        </li>
+                        <li>Hair Straightners</li>
+                        <li>Hair Dryers</li>
+                        <li>Epilators</li>
+                      </div>
+                      <div
+                        className="col px-4 pt-2 pb-3"
+                        style={{ backgroundColor: "#f9f9f9" }}
+                      >
+                        <li className="text-dark">
+                          <b>Beauty & Grooming</b>
+                        </li>
+                        <li>Make Up</li>
+                        <li>Skin Care</li>
+                        <li>Hair Care</li>
+                        <li>Bath & Spa</li>
+                        <li>Deodorants & Perfumes</li>
+                        <li className="text-dark">
+                          <b>Jewellery</b>
+                        </li>
+                        <li>Artificial Jewellery</li>
+                        <li>Silver Jewellery</li>
+                        <li>Precious Jewellery</li>
+                        <li>Coins and Bars</li>
+                        <li className="text-dark">
+                          <b>Accessories</b>
+                        </li>
+                        <li>Handbags</li>
+                        <li>Shoulder Bags</li>
+                        <li>Totes</li>
+                        <li>Sling bags</li>
+
+                        <li>Clutches</li>
+                        <li>Wallets & Belts</li>
+                        <li>Luggage & Travel</li>
+                        <li>Sunglasses</li>
+                        <li>Frames</li>
+                      </div>
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Featured</b>
+                        </li>
+                        <li>Forever 21</li>
+                        <li>Accessorize</li>
+                        <li>W</li>
+                        <li>Pantaloons</li>
+                        <li>Chemistry</li>
+                        <li>Lakme</li>
+                        <li>Nivea</li>
+                        <li>Catwalk</li>
+                        <li>Titan-Raga</li>
+                        <li>Fastrack</li>
+                        <li>Divastri</li>
+                        <li>Rare Roots</li>
+                        <li>Anmi</li>
+                        <li>Coins & Bars</li>
+                        <li>Crocs</li>
+                        <li className="text-dark">
+                          <b>Trending today!</b>
+                        </li>
+                        <li>Ruffles & Frills</li>
+                        <li>Pastel Kurtas & Kurtis</li>
+                        <li>Designer Net Sarees</li>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link fsize dropdown-toggle text-dark"
+                    href="#"
+                    data-toggle="dropdown"
+                  >
+                    <b>Sports, Books & More</b>
+                  </a>
+                  <div className="dropdown-menu menu3 rounded-0 border-0">
+                    <div className="row pl-2 mr-2 pr-1">
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Clothing</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Kids Clothing</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Boys Clothing</b>
+                        </li>
+                        <li>T-Shirts</li>
+                        <li>Ethnic Wear</li>
+                        <li>Shorts</li>
+                        <li>Shirts</li>
+                        <li>Innerwear</li>
+                        <li className="text-dark">
+                          <b>Girls Clothing</b>
+                        </li>
+                        <li>Dresses & Skirts</li>
+                        <li>Ethnic Wear</li>
+                        <li>T-Shirts & Tops</li>
+                        <li>Innerwear</li>
+                        <li className="text-dark">
+                          <b>Baby Boys Clothing</b>
+                        </li>
+                        <li>Combos Sets</li>
+                        <li>T-Shirts</li>
+                        <li>Innerwear</li>
+                        <li className="text-dark">
+                          <b>Baby Girls Clothing</b>
+                        </li>
+                        <li>Combos Sets</li>
+                        <li>Dresses & Gowns</li>
+                        <li>Innerwear</li>
+                      </div>
+                      <div
+                        className="col px-4 pt-2"
+                        style={{
+                          backgroundColor: "#f9f9f9",
+                          backgroundSize: "cover",
+                        }}
+                      >
+                        <li className="text-dark">
+                          <b>Kids Footwear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Boys Footwear</b>
+                        </li>
+                        <li>Sandals</li>
+                        <li>Sport Shoes</li>
+                        <li className="text-dark">
+                          <b>Girls Footwear</b>
+                        </li>
+                        <li>Flats & Bellies</li>
+                        <li>Sports Shoes</li>
+                        <li className="text-dark">
+                          <b>Infant Footwear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Character Shoes</b>
+                        </li>
+                        <li>Kids Watches</li>
+                        <li>Kids Sunglasses</li>
+                        <li className="text-dark">
+                          <b>Kids Winter Wear</b>
+                        </li>
+                        <li className="text-dark">
+                          <b>Boys Winter Wear</b>
+                        </li>
+                        <li>Boys Sweatshirts</li>
+                        <li>Boys Jackets</li>
+                        <li className="text-dark">
+                          <b>Girls Winter Wear</b>
+                        </li>
+                        <li>Girls Sweatshirts</li>
+                        <li>Girls Jackets</li>
+                        <li>Infant Winter Wear</li>
+                        <li>Thermals</li>
+                      </div>
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Toys</b>
+                        </li>
+
+                        <li>Remote Control Toys</li>
+                        <li>Educational Toys</li>
+                        <li>Soft Toys</li>
+                        <li>Cars & Die-cast Vehicles</li>
+                        <li>Outdoor Toys</li>
+                        <li>Action Figures</li>
+                        <li>Board Games</li>
+                        <li>Musical Toys</li>
+                        <li>Dolls & Doll Houses</li>
+                        <li>Puzzels</li>
+                        <li>S.T.E.M Toys</li>
+                        <li>Helicopters & Drones</li>
+                        <li>Toy Guns</li>
+                        <li>Party Supplies</li>
+                        <li className="text-dark">
+                          <b>School Supplies</b>
+                        </li>
+                        <li>School Bags</li>
+                        <li>School Combo Sets</li>
+                        <li>Lunch Box</li>
+                      </div>
+                      <div
+                        className="col px-4 pt-2 pb-3"
+                        style={{ backgroundColor: "#f9f9f9" }}
+                      >
+                        <li className="text-dark">
+                          <b>Baby Care</b>
+                        </li>
+                        <li>Diapers</li>
+                        <li>Wipes</li>
+                        <li>Diapering & Potty Training</li>
+                        <li>Baby Bath, Hair & Skin Care</li>
+                        <li>Baby Grooming</li>
+
+                        <li>Baby Bathing Accessories</li>
+                        <li>Baby Gift Sets & Combo</li>
+                        <li>Baby Oral Care</li>
+                        <li>Nursing & Breast Feeding</li>
+                        <li>Baby Food</li>
+                        <li>Baby Feeding Bottle & Accessories</li>
+                        <li>Baby Feeding Utensils & Accessories</li>
+                        <li>Baby Bedding</li>
+                        <li>Baby Gear</li>
+                        <li>Baby Medical & Health Care</li>
+                        <li>Baby Proofing & Saftey</li>
+                        <li>Baby Cleaners & Detergents</li>
+                      </div>
+                      <div className="col px-4 pt-2">
+                        <li className="text-dark">
+                          <b>Featured Brands</b>
+                        </li>
+                        <li>Miss & Chief</li>
+                        <li>Barbie</li>
+                        <li>Disney</li>
+                        <li>United Colors of Benetton</li>
+                        <li>The Children Place</li>
+                        <li>US Polo</li>
+                        <li>Flying Machine</li>
+                        <li>Crocs</li>
+                        <li>Puma</li>
+                        <li>Funskool</li>
+                        <li>Lego</li>
+                        <li>Luvlap</li>
+                        <li>Mamy Poko</li>
+                        <li>Mee Mee</li>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li className="nav-item mx-5 dropdown">
+                  <NavLink className="nav-link fsize text-dark" to="/">
+                    <b>Flights</b>
+                  </NavLink>
+                </li>
+
+                <li className="nav-item dropdown">
+                  <NavLink className="nav-link fsize text-dark" to="/">
+                    <b>Offer Zone</b>
+                  </NavLink>
                 </li>
               </ul>
             </div>

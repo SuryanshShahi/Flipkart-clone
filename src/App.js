@@ -7,6 +7,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
 
 const App = () => {
   // const [loading, setLoading] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
 
           <Redirect to="/" />
         </Switch>
+        <Footer/>
       </div>
     </section>
   );
